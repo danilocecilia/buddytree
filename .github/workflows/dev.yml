@@ -28,7 +28,7 @@ jobs:
         run: npm i
 
       - name: build
-        run: STAGE=dev npm run build
+        run: npm run build
 
       - name: copy files to s3
         run: aws s3 sync ./out s3://buddytree.danilocecilia.com
